@@ -1,0 +1,34 @@
+{
+  "name": "promise",
+  "version": "1.0.0",
+  "description": "Yet another Promise/A+ implementation",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "git@github.com:xchunzhao/promise.git",
+  "author": "zhaoxc <xchunzhao@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "+(src|__tests__)/**/*.{js,ts,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

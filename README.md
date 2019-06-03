@@ -1,2 +1,3 @@
-# promise
-My Promise/A+ implementation
+# Promise
+----
+Yet another Promise/A+ implementation
